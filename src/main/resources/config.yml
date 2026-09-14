@@ -1,0 +1,60 @@
+match:
+  min-players: 1
+  hunter-count: 4
+  auto-fill-bots: false
+  match-time-seconds: 1200
+
+monster:
+  starting-stage: 1
+  evolution-needed:
+    stage-2: 100
+    stage-3: 250
+  test-body:
+    stage-1-scale: 1.5
+    stage-2-scale: 2.0
+    stage-3-scale: 1.6
+  # Vanilla-client-safe TPS illusion. The controller keeps the normal camera,
+  # while the visible Monster body is drawn in front/over-shoulder.
+  view:
+    stage-1:
+      forward: 2.2
+      side: -0.65
+      vertical: 0.0
+    stage-2:
+      forward: 2.7
+      side: -0.85
+      vertical: 0.0
+    stage-3:
+      forward: 3.8
+      side: -1.25
+      vertical: 0.0
+  attack:
+    cooldown-ticks: 16
+    stage-1:
+      damage: 6.0
+      range: 3.0
+      width: 2.2
+      height: 2.8
+    stage-2:
+      damage: 9.0
+      range: 4.0
+      width: 3.0
+      height: 3.6
+    stage-3:
+      damage: 12.0
+      range: 5.5
+      width: 4.5
+      height: 5.0
+
+wildlife:
+  test-spawn-count: 6
+  corpse-expire-seconds: 120
+  feed-range: 3.5
+  evolution:
+    pig: 20
+    cow: 25
+    sheep: 20
+    chicken: 10
+
+ui:
+  sidebar: true
